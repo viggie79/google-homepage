@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Google Homepage</title>
+<style>
+.page {
+height: 100%;
+}
+.google {
+width: 300px;
+font-weight: 300;
+opacity: .9;
+margin-left: auto;
+margin-right: auto;
+display: block;
+top: 164px;
+position: relative;
+}
+.search {
+width: 735px; height:  1.5em;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border: 1px solid grey;
+top: 190px;
+position: relative;
+font-size: 1.5em;
+background-image: url("http://blog.garanimals.com/wp-content/uploads/2013/06/microphone-icon.jpg");
+background-position: right;
+background-repeat: no-repeat;
+background-size: 25px;
+}
+.container {
+width:700px;
+margin-left: auto;
+margin-right: auto;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 18px;
+	padding: 5px 0 7px 7px;
+	font-weight: 550;
+	font-family: arial;
+}
+.mic {
+height: 25px;
+position: relative;
+left: 1125px;
+top: 152px;
+}
+.navbar {
+height: 50px;
+float: right;
+}
+.navbar div {
+height: 30px;
+padding: 5px;
+margin-right:10px;
+}
+.onclick-menu {
+position: relative;
+display: inline-block;
+}
+.onclick-menu:before {
+content: "+Username";
+font-size: 1.2em;
+}
+#gmail:before {
+content: "Gmail";
+}
+#images:before {
+content: "Images"
+}
+
+#grid{
+background-image: url("https://cloud.githubusercontent.com/assets/10885544/6875731/94f72cea-d497-11e4-89c8-bfcfe6d5a6ac.png");
+background-size: 35px 37px;
+background-repeat: no-repeat;
+opacity: .6;
+}
+#grid:before {
+content:"wor";
+opacity: 0;
+}
+#bell{
+background-image: url("https://cloud.githubusercontent.com/assets/10885544/6875728/8e91bc26-d497-11e4-90c0-8c78e50671f4.png");
+background-size: 35px 37px;
+background-repeat: no-repeat;
+opacity: .6;
+}
+#bell:before {
+content:"wor";
+opacity: 0;
+}
+#plus{
+background-image: url("https://cloud.githubusercontent.com/assets/10885544/6875738/a5bfce9c-d497-11e4-93d5-b5861f58d9d9.png");
+background-size: 35px 37px;
+background-repeat: no-repeat;
+opacity: .6;
+}
+#plus:before {
+content:"wordd";
+opacity: 0;
+}
+#user{
+background-image: url("https://cloud.githubusercontent.com/assets/10885544/6875732/97d59bf4-d497-11e4-8ce7-63b9427f7c6d.jpg");
+background-size: 35px 37px;
+background-repeat: no-repeat;
+opacity: .6;
+background-border: 2px solid;
+}
+#user:before {
+content:"wordd";
+opacity: 0;
+}
+.onclick-menu:focus .onclick-menu-content {
+visibility: visible;
+opacity: 1;
+}
+.onclick-menu-content {
+position: absolute;
+z-index:1;
+visibility: hidden;
+transition: visibility 0.5s;
+opacity: 0;
+}
+
+
+.onclick-menu2 {
+position: relative;
+display: inline-block;
+}
+.onclick-menu2:focus .onclick-menu-content {
+visibility: visible;
+opacity: 1;
+}
+.onclick-menu2-content {
+position: absolute;
+z-index:1;
+visibility: hidden;
+transition: visibility 0.5s;
+opacity: 0;
+}
+.onclick-menu2-content li  {
+list-style-type: none;
+}
+.onclick-menu-content li {
+list-style-type: none;
+}
+
+.bottom {
+position: relative;
+top: 200px;
+height: 150px;
+}
+.buttons {
+line-height: 25px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+.pushme {
+height: 30px;
+margin: 0 10px 0 10px;
+}
+
+.language {
+position: relative;
+top: 50px;
+line-height: 25px;
+text-align: center;
+font-size: 1.1em;
+}
+.buttons li {
+display: inline;
+}
+.footer {
+position: absolute;
+bottom: 0;
+min-width: 100%;
+background-color: #F5F5F5;
+border: 1px solid #E4E4E4;
+line-height: 20px;
+}
+.footer li a {
+color: black;
+}
+.footer li a:link {
+text-decoration: none;
+}
+.footer li:hover{
+text-decoration: underline;
+}
+
+.left, .right {
+display: inline;
+}
+.left {
+float: left;
+}
+.right {
+float: right;
+}
+.left li{
+display: inline;
+list-style-type: none;
+opacity: .8;
+padding: 0 13px 0 13px;
+}
+.right li{
+display: inline;
+list-style-type: none;
+opacity: .8;
+padding: 0 13px 0 13px;
+}
+</style>
+	</head>
+	<body>
+	<div class="page">
+		<div class="navbar">
+		<div tabindex="0" class="onclick-menu">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		<div tabindex="0" class="onclick-menu" id="gmail">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		<div tabindex="0" class="onclick-menu" id="images">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		<div tabindex="0" class="onclick-menu2" id="grid">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		<div tabindex="0" class="onclick-menu2" id="bell">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		<div tabindex="0" class="onclick-menu2" id="plus">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		<div tabindex="0" class="onclick-menu2" id="user">
+			<ul class="onclick-menu-content">
+				<li><button onclick="alert('click 1')">Option 1</button></li>
+				<li><button onclick="alert('click 2')">Option 2</button></li>
+				<li><button onclick="alert('click 3')">Option 3</button></li>
+			</ul>
+		</div>
+		</div>
+		
+		
+			<div class="container">
+				<img class="google" src="https://www.google.co.th/images/srpr/logo11w.png">
+			
+			<form>
+				<input class="search"" type="text" name="search" placeholder="Search Google or type URL">
+			</form>
+		<div class="bottom">
+		<div class="buttons">
+			<ul>
+				<li><button class="pushme" type="button">Google Search</button></li>
+				<li><button class="pushme" type="button">I'm Feeling Lucky</button></li>
+				</ul>
+		</div>
+		<div class="language">
+			<p>Google.co.th offered in <a href="https://www.google.co.th/">thai</a></p>
+		</div>
+		</div>
+		</div>
+		<div class="footer">
+			<ul class="left">
+				<li><a href="https://www.google.co.th/intl/en/ads/?fg=1">Advertising</a></li>
+				<li><a href="https://www.google.co.th/services/?fg=1">Business</a></li>
+				<li><a href="https://www.google.co.th/intl/en/about/">About</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="https://www.google.co.th/intl/en/policies/privacy/?fg=1">Privacy</a></li>
+				<li><a href="https://www.google.co.th/intl/en/policies/terms/regional.html">Terms</a></li>
+				<li><a href="https://www.google.co.th/preferences?hl=en">Settings</a></li>
+				<li><a href="https://www.google.com/?gws_rd=cr&ei=BCk3Vb-GI9HiuQTKnYCADg&fg=1">Use Google.com</a></li>
+			</ul>
+		</div>
+	</div>
+	<body>
+</html>
